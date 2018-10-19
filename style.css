@@ -1,0 +1,177 @@
+/* GRID */
+/* Clearfix */
+.row::before, .row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+[class*="col-"] {
+	float: left;
+	min-height: 1px;
+	padding: 0px;
+}
+/* Col-x classes */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+/* Col-offset-x classes */
+.col-offset-0 {margin-left: 0;}
+.col-offset-1 {margin-left: 8.33%;}
+.col-offset-2 {margin-left: 16.66%;}
+.col-offset-3 {margin-left: 25%;}
+.col-offset-4 {margin-left: 33.33%;}
+.col-offset-5 {margin-left: 41.66%;}
+.col-offset-6 {margin-left: 50%;}
+.col-offset-7 {margin-left: 58.33%;}
+.col-offset-8 {margin-left: 66.66%;}
+.col-offset-9 {margin-left: 75%;}
+.col-offset-10 {margin-left: 83.33%;}
+.col-offset-11 {margin-left: 91.66%;}
+
+/* PROJECT 3.2 */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic);
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+/* Main navbar */
+.main-nav {
+	background-color: #313234;
+	height: 110px;
+}
+.main-nav__logo {
+	padding: 35px 0;
+}
+.main-nav__menu {
+	float: right;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.main-nav__item {
+	display: inline-block;
+}
+.main-nav__item:hover {
+	background-color: #212123;
+}
+.main-nav__link,
+.main-nav__link--active {
+	line-height: 110px;
+	padding: 0 20px;	
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: bold;
+}
+.main-nav__link--active {
+	color: #01c7ea;
+}
+/* Hero */
+.hero {
+	background-image: url(https://www.nasco.net/media/page/submit-your-cv-1.jpg);
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+	height: 600px;
+	width: 100%;
+	margin: 0 auto;
+}
+.hero__slogan {
+	float: right;
+	width: 835px;
+	height: 235px;
+	margin-top: 155px;
+	padding: 0;
+	background-color:rgba(0,0,0,0.5);
+}
+.hero__header {
+	text-transform: uppercase;
+	font-size: 34px;
+	color: #fff;
+	padding-left: 60px;
+	padding-top: 50px; 
+	margin: 0;
+}
+/* TO DO - nie działa */
+.hero__header--bold {
+	font-weight: bolder;
+}
+.slider {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.slider-dots {
+	position: absolute;
+	bottom: 35px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.slider-dots__element,
+.slider-dots__element--active {
+	display: inline-block;
+	height: 32px;
+	width: 32px;
+	border-radius: 16px;
+	background-color: #807f7d;
+	margin: 0 28px;
+	padding: 0;
+}
+.slider-dots__element--active {
+	background-color: #fff;
+}
+/* Benefits */
+.benefits__item {
+	text-align: center;
+	margin-top: 130px;
+	transition: .3s;
+}
+.benefits__icon {
+	height: 155px;
+	width: 155px;
+	margin-left: 122.5px;
+	border-radius: 20px;
+	padding-top: 30px;
+	background-color: #313332;
+	font-size: 70px;
+	color: #fff;
+	transition: inherit;
+}
+.benefits__header {
+	text-transform: uppercase;
+	font-size: 19px;
+	font-weight: bold;
+	transition: inherit;
+}
+.benefits__paragraph {
+	text-align: center;
+	font-size: 16px;
+	color: #909090;
+	max-width: 375px;
+}
+.benefits__item:hover .benefits__icon {
+	background-color: #00c7e8;
+}
+.benefits__item:hover .benefits__header {
+	color: #00c7e8;
+}
