@@ -51,7 +51,6 @@ body {
 	max-width: 1200px;
 	margin: 0 auto;
 }
-
 /* Main navbar */
 .main-nav {
 	background-color: #313234;
@@ -204,7 +203,7 @@ body {
 .gallery__layer {
 	position: absolute;
 	top: -100%;
-	transition: 0.7s ease-in-out;
+	transition: 0.5s ease-in-out;
 	background-color: rgba(0,0,0,0.5);
 	height: 100%;
 	width: 100%;
@@ -240,4 +239,42 @@ body {
 }
 .gallery__element:hover .gallery__layer {
 	top: 0;
+}
+/* Team members */
+.team-member {
+	text-align: center;
+	width: 100%;
+}
+.team-member__photo {
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+.team-member__name {
+	margin: 35px auto 0 auto;
+	font-size: 22px;
+	color: #807f7d;
+}
+.team-member__layer {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+	display: none;
+	transition: all 0.4s;
+}
+.team-member__layer>p {
+	text-align: center; 
+	color: #fff;
+	font-size: 24px;
+	line-height: 250px;
+	margin: 0;
+}
+/* TO DO - transition do hovera */
+.team-member__photo:hover .team-member__layer {
+	display: inherit;
 }
